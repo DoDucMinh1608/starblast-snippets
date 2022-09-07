@@ -327,7 +327,7 @@ this.event = function (event, game) {
     case 'ship_spawned':
       shipInit(ship);
       const { x = 0, y = 0 } = ship.custom;
-      ship.set({ x, y, invulnerable: 300, crystals: getTier(ship) ** 2 * 20 });
+      ship.set({ x, y, invulnerable: 300 });
       break;
   }
 }
